@@ -1,9 +1,9 @@
+import { FormEvent, useState } from 'react';
 import Modal from 'react-modal';
 import incomeIMG from '../../assets/income.svg';
 import outcomeIMG from '../../assets/outcome.svg';
 import closeIMG from '../../assets/close.svg'
 import { Container, TransactionTypeContainer, RadioBox } from './styles';
-import { useState } from 'react';
 
 interface NewTransactionModalProps {
   isOpen: boolean;
@@ -11,7 +11,16 @@ interface NewTransactionModalProps {
 }
 
 export function NewTransactionModal({ isOpen, onRequestClose }: NewTransactionModalProps) {
+  const [title, setTitle] = useState('');
+  const [value, setValue] = useState(0);
   const [type, setType] = useState('deposit');
+  const [category, setCategory] = useState('');
+
+  function handleCreateNewTransaction(event: FormEvent) {    
+    event.preventDefault();
+    
+  }
+
   return (
     <Modal
       isOpen={isOpen}
@@ -19,7 +28,7 @@ export function NewTransactionModal({ isOpen, onRequestClose }: NewTransactionMo
       overlayClassName="react-modal-overlay"
       className="react-modal-content"
     >
-      <Container>
+      <Container onSubmit={handleCreateNewTransaction}>
         <button 
           type="button" 
           onClick={onRequestClose} 
@@ -29,13 +38,17 @@ export function NewTransactionModal({ isOpen, onRequestClose }: NewTransactionMo
         </button>
         <h2>Cadastrar transação</h2>
 
-        <input
+        <input          
           placeholder="Título"
+          value={title}
+          onChange={event => setTitle(event.target.value)}
         />
 
         <input
           type="number"
           placeholder="Valor"
+          value={value}
+          onChange={event => setValue(Number(event.target.value))}
         />
 
         <TransactionTypeContainer>
@@ -60,8 +73,10 @@ export function NewTransactionModal({ isOpen, onRequestClose }: NewTransactionMo
           </RadioBox>          
         </TransactionTypeContainer>
 
-        <input
+        <input          
           placeholder="Categoria"
+          value={category}
+          onChange={event => setCategory(event.target.value)}
         />
 
         <button type="submit">
