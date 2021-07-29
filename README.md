@@ -13,14 +13,21 @@
 ---
 
 ### Pacotes Instalados
-1 - yarn create react-app projectName --template typescript [https://create-react-app.dev/]
+1 - create react-app projectName --template typescript [https://create-react-app.dev/]
 
-2 - yarn add styled-components [ https://styled-components.com/ ]
+2 - styled-components [ https://styled-components.com/ ]
 
-3 - yarn add @types/styled-components [ https://www.npmjs.com/package/@types/styled-components ]
+3 - types styled components [ https://www.npmjs.com/package/@types/styled-components ]
 
-4 - yarn add polished [ https://www.npmjs.com/package/polished ]
+4 - polished [ https://www.npmjs.com/package/polished ]
 
+5 - axios [https://www.npmjs.com/package/axios]
+
+6 - miragejs [https://miragejs.com/]
+
+7 - react modal [https://www.npmjs.com/package/react-modal]
+
+8 - types react modal [https://www.npmjs.com/package/@types/react-modal]
 ---
 
 ### Resultado Final
