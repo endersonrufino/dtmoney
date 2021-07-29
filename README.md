@@ -25,6 +25,6 @@
 
 ### Resultado Final
 
-<img alt="dtmoneyGif" src="https://github.com/endersonrufino/dtmoney/blob/main/src/assets/readme/dtmoney.png">
+<img alt="dtmoneyGif" src="https://github.com/endersonrufino/dtmoney/blob/main/src/assets/readme/dtmoney.gif">
 
-para uma melhor visualização confira um video no YouTube: https://youtu.be/5Ovlhjp-ax0
+para uma melhor experiência confira um video no YouTube: https://youtu.be/E2d5Kxx8Ld0
