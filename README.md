@@ -28,4 +28,6 @@
 <img alt="dtmoneyGif" src="https://github.com/endersonrufino/dtmoney/blob/main/src/assets/readme/dtmoney.gif">
 </p>
 
+<p align="center">
 para uma melhor experiência confira um video no YouTube: https://youtu.be/E2d5Kxx8Ld0
+</p>
